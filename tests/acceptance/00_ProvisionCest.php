@@ -4,7 +4,7 @@ use \Step\Acceptance;
 /**
  * @group test
  */
-class PSCest
+class ProvisionCest
 {
 
     // ShopByBrand
@@ -19,7 +19,7 @@ class PSCest
         $deployPage->goToSettingsPage();
         $deployPage->goToUsersPage();
         $deployPage->goToDashboardPage(); }
-    
+
     function T3CreateTestInstance(Step\Acceptance\PSLoginSteps $I, \Page\PSDeployPage $deployPage){
         $deployPage->goToDeployPage();
         $deployPage->createTestInstance('master-test');
